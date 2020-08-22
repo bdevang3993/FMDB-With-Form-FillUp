@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889CF40624F0E2000085D729 /* Quation_Option.db in Resources */ = {isa = PBXBuildFile; fileRef = 889CF40524F0E2000085D729 /* Quation_Option.db */; };
 		88F2BDEA24EE4E9E006B6348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BDE924EE4E9E006B6348 /* AppDelegate.swift */; };
 		88F2BDEC24EE4E9E006B6348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BDEB24EE4E9E006B6348 /* SceneDelegate.swift */; };
 		88F2BDEE24EE4E9E006B6348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BDED24EE4E9E006B6348 /* ViewController.swift */; };
@@ -20,7 +21,6 @@
 		88F2BE0F24EE5713006B6348 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BE0E24EE5713006B6348 /* MainViewModel.swift */; };
 		88F2BE1124EE572D006B6348 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BE1024EE572D006B6348 /* MainModel.swift */; };
 		88F2BE1424EE6A00006B6348 /* DBManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BE1324EE6A00006B6348 /* DBManger.swift */; };
-		88F2BE1724EE6B69006B6348 /* Quation_Option.db in Resources */ = {isa = PBXBuildFile; fileRef = 88F2BE1624EE6B69006B6348 /* Quation_Option.db */; };
 		88F2BE1924EE6B70006B6348 /* InterView.db in Resources */ = {isa = PBXBuildFile; fileRef = 88F2BE1824EE6B70006B6348 /* InterView.db */; };
 		88F2BE1C24EE6E3D006B6348 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BE1B24EE6E3D006B6348 /* FMResultSet.m */; };
 		88F2BE1E24EE7380006B6348 /* QuationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BE1D24EE7380006B6348 /* QuationTableViewCell.swift */; };
@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		889CF40524F0E2000085D729 /* Quation_Option.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quation_Option.db; sourceTree = "<group>"; };
 		88F2BDE624EE4E9E006B6348 /* FMDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F2BDE924EE4E9E006B6348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F2BDEB24EE4E9E006B6348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		88F2BE0E24EE5713006B6348 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		88F2BE1024EE572D006B6348 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		88F2BE1324EE6A00006B6348 /* DBManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManger.swift; sourceTree = "<group>"; };
-		88F2BE1624EE6B69006B6348 /* Quation_Option.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quation_Option.db; sourceTree = "<group>"; };
 		88F2BE1824EE6B70006B6348 /* InterView.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = InterView.db; sourceTree = "<group>"; };
 		88F2BE1A24EE6E3D006B6348 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		88F2BE1B24EE6E3D006B6348 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
@@ -154,8 +154,8 @@
 		88F2BE1524EE6B4A006B6348 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				889CF40524F0E2000085D729 /* Quation_Option.db */,
 				88F2BE1824EE6B70006B6348 /* InterView.db */,
-				88F2BE1624EE6B69006B6348 /* Quation_Option.db */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889CF40624F0E2000085D729 /* Quation_Option.db in Resources */,
 				88F2BDF624EE4EA2006B6348 /* LaunchScreen.storyboard in Resources */,
 				88F2BDF324EE4EA2006B6348 /* Assets.xcassets in Resources */,
-				88F2BE1724EE6B69006B6348 /* Quation_Option.db in Resources */,
 				88F2BDF124EE4E9F006B6348 /* Main.storyboard in Resources */,
 				88F2BE1924EE6B70006B6348 /* InterView.db in Resources */,
 			);

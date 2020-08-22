@@ -18,5 +18,5 @@ struct AnswerOption {
     var optionId:Int?
     var quationId:Int?
     var option:String?
-    var isSelected:Bool = false
+    var selected:Int?
 }

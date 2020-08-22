@@ -17,7 +17,10 @@ class DBManager: NSObject {
     var givenanswer = "givenanswer"
     var optionId = "option_id"
     var quationSelectedId = "qaution_id"
+    var option_id = "option_id"
+    var selected = "selected"
     var option = "options"
+    
     
     var pathToDatabaseofInterView: String = ""
     var pathToDatabaseQuationAns: String = ""
@@ -158,12 +161,12 @@ class DBManager: NSObject {
                        
                        while results.next() {
 
-                        let InterView = AnswerOption(optionId: Int(results.int(forColumn: optionId)), quationId: Int(results.int(forColumn: quationSelectedId)), option: results.string(forColumn: option))
+                        let InterView = AnswerOption(optionId: Int(results.int(forColumn: optionId)), quationId: Int(results.int(forColumn: quationSelectedId)), option: results.string(forColumn: option), selected:Int(results.int(forColumn: selected)))
                            
                            if optionList == nil {
                                optionList = [AnswerOption]()
                            }
-                           
+                        
                            optionList.append(InterView)
                        }
                    }
@@ -174,5 +177,21 @@ class DBManager: NSObject {
                    database2.close()
                }
         return optionList
+    }
+    
+    
+    func updateloadOptions(SelectedAns ans: Int, optionId: Int) {
+        if openDatabase2() {
+            let query = "update Quation_option set \(selected)=? where \(option_id)=?"
+            
+            do {
+                try database2.executeUpdate(query, values: [ans,optionId])
+            }
+            catch {
+                print(error.localizedDescription)
+            }
+            
+            database2.close()
+        }
     }
 }

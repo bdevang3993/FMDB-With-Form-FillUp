@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var quationList: [quationsInfo]!
     var arrOptions:[AnswerOption]!
     var selectedIndex:Int = 0
-    
+    var selectedAnsIndex:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
@@ -34,25 +34,25 @@ class ViewController: UIViewController {
             arrOptions = DBManager.shared.loadOptions(quationId: (selectedIndex + 1))
             tblDisplay.reloadData()
         }
-      
     }
     
     @IBAction func btnNextClicked(_ sender: Any) {
+        
         
         if quationList.count - 1 > selectedIndex {
             selectedIndex = selectedIndex + 1
                    arrOptions = DBManager.shared.loadOptions(quationId: (selectedIndex + 1))
                    tblDisplay.reloadData()
         } else if  quationList.count - 1 == selectedIndex {
-            let allData = quationList.filter{$0.givenAns == 1}
-            var newString = "Your total score is = \(allData.count) / \(quationList.count)"
-            Alert().showAlert(message: newString, viewController: self)
+//            let allData = quationList.filter{$0.givenAns == 1}
+//            var newString = "Your total score is = \(allData.count) / \(quationList.count)"
+//            Alert().showAlert(message: newString, viewController: self)
         }
        
     }
     
     @IBAction func btnSubmitClicked(_ sender: Any) {
-        let allData = arrOptions.filter{$0.isSelected == true}
+        let allData = arrOptions.filter{$0.selected == 1}
         if allData.count > 0 {
             self.checkandUpdateData()
         }
