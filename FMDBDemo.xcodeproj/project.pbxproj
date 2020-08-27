@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		889CF40624F0E2000085D729 /* Quation_Option.db in Resources */ = {isa = PBXBuildFile; fileRef = 889CF40524F0E2000085D729 /* Quation_Option.db */; };
+		88B7D02824F68D2000F821C7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7D02724F68D2000F821C7 /* ResultViewController.swift */; };
+		88B7D02A24F68D8300F821C7 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7D02924F68D8300F821C7 /* ResultViewModel.swift */; };
+		88B7D02C24F68DB300F821C7 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7D02B24F68DB300F821C7 /* ResultTableViewCell.swift */; };
 		88F2BDEA24EE4E9E006B6348 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BDE924EE4E9E006B6348 /* AppDelegate.swift */; };
 		88F2BDEC24EE4E9E006B6348 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BDEB24EE4E9E006B6348 /* SceneDelegate.swift */; };
 		88F2BDEE24EE4E9E006B6348 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F2BDED24EE4E9E006B6348 /* ViewController.swift */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		889CF40524F0E2000085D729 /* Quation_Option.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Quation_Option.db; sourceTree = "<group>"; };
+		88B7D02724F68D2000F821C7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		88B7D02924F68D8300F821C7 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		88B7D02B24F68DB300F821C7 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		88F2BDE624EE4E9E006B6348 /* FMDBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMDBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F2BDE924EE4E9E006B6348 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88F2BDEB24EE4E9E006B6348 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88B7D02624F68CF100F821C7 /* ResultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				88B7D02724F68D2000F821C7 /* ResultViewController.swift */,
+				88B7D02B24F68DB300F821C7 /* ResultTableViewCell.swift */,
+				88B7D02924F68D8300F821C7 /* ResultViewModel.swift */,
+			);
+			path = ResultViewController;
+			sourceTree = "<group>";
+		};
 		88F2BDDD24EE4E9E006B6348 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				88F2BE0D24EE56AA006B6348 /* mainView */,
+				88B7D02624F68CF100F821C7 /* ResultViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -239,11 +256,14 @@
 				88F2BE0A24EE4EF0006B6348 /* FMDatabasePool.m in Sources */,
 				88F2BE0824EE4EF0006B6348 /* FMDatabaseQueue.m in Sources */,
 				88F2BDEA24EE4E9E006B6348 /* AppDelegate.swift in Sources */,
+				88B7D02824F68D2000F821C7 /* ResultViewController.swift in Sources */,
 				88F2BE0924EE4EF0006B6348 /* FMDatabase.m in Sources */,
 				88F2BE1424EE6A00006B6348 /* DBManger.swift in Sources */,
 				88F2BE2224EE8EE4006B6348 /* Constant.swift in Sources */,
 				88F2BE1124EE572D006B6348 /* MainModel.swift in Sources */,
 				88F2BE0B24EE4EF0006B6348 /* FMDatabaseAdditions.m in Sources */,
+				88B7D02A24F68D8300F821C7 /* ResultViewModel.swift in Sources */,
+				88B7D02C24F68DB300F821C7 /* ResultTableViewCell.swift in Sources */,
 				88F2BE1C24EE6E3D006B6348 /* FMResultSet.m in Sources */,
 				88F2BE2024EE7397006B6348 /* AnsTableViewCell.swift in Sources */,
 				88F2BDEC24EE4E9E006B6348 /* SceneDelegate.swift in Sources */,
